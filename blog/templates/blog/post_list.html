@@ -4,8 +4,9 @@
     {% for post in posts %}
     <div class="post">
         <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title}}</a></h2>
-        <p> {{ post.text|linebreaksbr }} </p>
+        <p> {{ post.description|linebreaksbr }} </p>
         <p>Publicado: {{ post.published_date }}</p>
+
     </div>
     {% empty %}
         <h2>Ops.. Aparentemente não há nenhum post.</h2>

@@ -3,8 +3,12 @@ h1 a, h2 a, header{
     font-family: 'Lobster';
 }
 
-body{
-    padding-left: 15px;
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    border-bottom: black 1px;
+
 }
 
 .page-header {
