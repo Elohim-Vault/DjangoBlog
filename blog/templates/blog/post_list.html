@@ -7,5 +7,8 @@
         <p> {{ post.text|linebreaksbr }} </p>
         <p>Publicado: {{ post.published_date }}</p>
     </div>
+    {% empty %}
+        <h2>Ops.. Aparentemente não há nenhum post.</h2>
+        <p> Por que você não tenta criar um?</p>
     {% endfor %}
 {% endblock %}
