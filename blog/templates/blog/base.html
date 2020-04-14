@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
@@ -14,6 +15,10 @@
         <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
         {% endif %}
         <h1><a href="/">Just a blog</a></h1>
+        <form method="GET" id="search-form">
+            <input type="search" class="form-control" id="search" name="search" placeholder="Buscar">
+            <i class="fas fa-search fa-2x" id="search-btn"></i>
+        </form>
     </div>
     <div class="content container">
         <div class="row">
@@ -24,4 +29,5 @@
         </div>
     </div>
 </body>
+<script src="{% static 'js/script.js' %}"></script>
 </html>
